@@ -1,0 +1,27 @@
+plugins { 
+    id 'java'
+    id 'application'
+    id 'eclipse'
+    id 'edu.sc.seis.launch4j' version '1.6.1' 
+}
+
+
+mainClassName = 'com.github.skazzyy.mail.systemtray.GmailNotifier'
+
+launch4j {
+    //https://github.com/TheBoegl/gradle-launch4j
+    //http://launch4j.sourceforge.net/
+    mainClassName = 'com.github.skazzyy.mail.systemtray.GmailNotifier'
+}
+
+repositories { jcenter() }
+
+dependencies {
+    compile 'com.google.api-client:google-api-client:1.21.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.21.0'
+    compile 'com.google.apis:google-api-services-gmail:v1-rev36-1.21.0'
+
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    testCompile 'junit:junit:4.12'
+}
+

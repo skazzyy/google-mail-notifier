@@ -1,0 +1,18 @@
+#Gradle
+.gradle/
+build/
+
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+#Don't check in client secrets
+client_secret.json
